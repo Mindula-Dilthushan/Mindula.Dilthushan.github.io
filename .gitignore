@@ -1,0 +1,12 @@
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.idea
+Mindula.Dilthushan.github.io.iml
