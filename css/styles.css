@@ -1,5 +1,150 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #0078ff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 1024px) {
+    .bg-image {
+        background-attachment: scroll;
+    }
+}
+
+.display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+}
+
+#header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#header .logo a {
+    color: #fff;
+}
+
+#header .logo img {
+    max-height: 40px;
+}
+
+#header.header-scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 0;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .hero-content {
+    text-align: center;
+    position: absolute;
+}
+
+.hero .overlay-intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.hero .hero-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+@media (min-width: 768px) {
+    .hero .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+.hero .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Amatic SC', cursive;
+}
+
+@media (min-width: 768px) {
+    .hero .hero-subtitle {
+        font-size: 2.5rem;
+    }
+}
+
+.hero .text-slider-items {
+    display: none;
+}
+
+.hero-single {
+    height: 350px;
+}
+
+.hero-single .hero-content {
+    margin-top: 30px;
+}
+
+.hero-single .hero-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .hero-single .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+.hero-single .breadcrumb {
+    background-color: transparent;
+    color: #0078ff;
+}
+
+.hero-single .breadcrumb .breadcrumb-item:before {
+    color: #cde1f8;
+}
+
+.hero-single .breadcrumb .breadcrumb-item.active {
+    color: #cde1f8;
+}
+
+.hero-single .breadcrumb a {
+    color: #fff;
 }
