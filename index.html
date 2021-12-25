@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <title>Mindula Dilthushan</title>
 
+    <!--Import Google Fonts ------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
     <!--Import Styles ------------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--Import Test Styles -------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="test/test.css">
+
 </head>
 <body>
 
-<div class="container">
-    <h1>
-        Hello <br>
-        I am  <br>
-        <b><i> Mindula Dilthushan </i></b>
-    </h1>
-</div>
+<!--Header Section ---------------------------------------------------------------------------------------------------->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a href="index.html">Mindula Dilthushan</a></h1>
+    </div>
+</header>
 
+<!--Hero Section ------------------------------------------------------------------------------------------------------>
+<div id="hero" class="hero route bg-image" style="background-image: url(assets/img/wall.jpg)">
+    <div class="overlay-intro"></div>
+    <div class="hero-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <h1 class="hero-title mb-4">I am Mindula Dilthushan</h1>
+                <p class="hero-subtitle">
+                    <span
+                            class="typed"
+                            data-typed-items="Software Designer , Developer, Ethical Hacker, Photographer, Gamer">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!--Import Js---------------------------------------------------------------------------------------------------------->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--Import Test Js----------------------------------------------------------------------------------------------------->
+<script src="test/test.js"></script>
+
 </body>
 </html>
